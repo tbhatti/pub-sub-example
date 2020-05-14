@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
-}
+/***Scalable and module architecture, SMACSS Examples 
+========================================================*/
+     #App {
+      text-align: left;
+    }    
+    h1 {
+      color: #5bc0de;
+    }
+    .l-grid {
+      list-style-type: square;
+    }    
+    .l-grid__item { 
+      color: grey;
+    }
+    /**End SMACSS*/
+    
+    /** BEM CSS example 
+    ========================================================*/
+    .App-header { /**Block*/
+      min-height: 100vh;
+      font-size: calc(10px + 2vmin);
+      color: white;
+      padding: 20px;
+    }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+    .btn { /**Element*/
+      display: inline-block;
+      cursor: pointer;
+      background-image: none;
+      border: 1px solid transparent;
+      padding: 6px 12px;
+      font-size: 14px;
+      line-height: 1.42857143;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0;
+      font-weight: 400;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+    }
+    /** End BEM CSS example */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+    /***OOCSS Examples 
+    ========================================================*/ 
+    .btn-primary {
+      color: #fff;
+      background-color: #337ab7;
+      border-color: #2e6da4;
+    }
+    
+    .btn-info {      
+      color: #fff;
+      background-color: #5bc0de;
+      border-color: #46b8da;
+    }
+    
+    .btn-success {
+      color: #fff;
+      background-color: #5cb85c;
+      border-color: #4cae4c;
+    }
+   /***End OOCSS Examples */
+    
+   /***Atomic CSS Examples 
+   =========================================================*/    
+    .grey-background {
+      background-color: #282c34;
+    }
+    
+    
